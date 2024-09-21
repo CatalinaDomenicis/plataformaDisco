@@ -1,0 +1,219 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+} 
+
+body{
+    font-family:sans-serif;
+} 
+
+/* MENU */
+
+.contenedor{
+    background-color: #2a6f97;
+    min-height: 80px;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.menu2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: #3997f1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #3997f1;
+}
+
+#menu{
+    display: none;
+}
+
+.menuicono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* IMAGEN DE FONDO */
+
+.fondo{
+     background-image: url(Imagenes/form.WEBP);
+     background-position: top center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 80vh;
+     padding: 80px 0 0 0; 
+     max-width: 100%;
+ 
+ }  
+
+/* FORMULARIO */
+
+.cuadrado{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+    left: 300px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+    width: 700px;
+    outline: none;
+}
+
+form h2{
+    font-size: 30px;
+    color: #edf0f0;
+    margin-bottom: 35px;
+}
+
+input{
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #2a6f97 ;
+    margin-bottom: 30px;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+::placeholder{
+    color: #9d9bb1;
+}
+
+/* DESCRIPCÓN */
+
+.descripcion{
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+/* BOTON ENVIAR */
+
+.btn{
+    background-color: #2a6f97;
+    border: 2px #2a6f97;
+    cursor: pointer;
+    
+}
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 768px) {
+
+    /* MENU */
+
+    .contenedor{
+        min-height: 78px;
+    }
+
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(42, 111, 151, 0.8);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .fondo{
+        height: 100vh;
+        padding: 100px 30px ;
+        background-image: url(Imagenes/\ responsive.JPG);
+        max-width: 100%;
+    }
+
+    form{
+       padding: 100px 30px ;
+       max-width: 230px;
+       height: 900px;
+       position: relative;
+       bottom: 70px;
+       right: 10px;
+    }
+
+    .cuadrado{
+        max-width: 300px;
+        height: 790px;
+        position: relative;
+        bottom: 70px;
+        left: 10px;
+
+    }
+
+    .boton{
+        max-width: 300px;
+        position: relative;
+        left: 18px;
+    }
+
+
+}

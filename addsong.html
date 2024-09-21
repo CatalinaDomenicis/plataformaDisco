@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Songs</title>
+
+     <!-- FAVICON -->
+
+     <link rel="shortcut icon" href="Imagenes/Favicon.PNG" type="image/x-icon" >
+
+     <!-- LETRAS CON GOOGLE -->
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+ 
+     <!-- TAILWIND -->
+ 
+     <script src="https://cdn.tailwindcss.com"></script>
+ 
+     <!-- CSS -->
+ 
+     <link rel="stylesheet" href="addsong.css">
+
+</head>
+<body>
+
+
+    <!-- MENU -->
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="menu menu2">
+
+                 <a href="#tanbionica" class="logo">Tan Biónica</a> 
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="Imagenes/menu.png" class="menuicono" alt="">
+                </label>
+
+                <nav class="navbar">
+ 
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="AddAlbum.html">Add Album</a></li>
+                         <li><a href="Editalbum.html"> Edit Album</a></li>
+                         <li><a href="addsong.html"> Add Songs</a></li>
+                         <li><a href="tour.html"> Tour</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- TITULO -->
+    
+    <h1 class="text-4xl merriweather-bold text-center titulo">Álbum más escuchado</h1>
+
+    <br>
+    <br>
+ 
+    <!-- SUBTITULO -->
+
+    <h3 class="subtitulo text-5xl merriweather-bold caja">Obsesionario</h3>
+
+    <br>
+
+    <!-- TEXTO -->
+
+    <p class="text-xl text-center poppins-extralight parrafo tracking-widest">Este álbum marco un antes y después en el grupo, ganando dos Premios Gardel: <strong> Mejor banda pop y Revelación.</strong>
+       Fue publicado el 1 de octubre de 2010. Este álbum mantuvo a Tan Biónica en los tops radiales de Chile, logrando que la banda lleve su música a países como España, México, Venezuela, 
+       Paraguay, Uruguay y Francia. Por su parte, los videoclips de las canciones alcanzaron los primeros puestos en los principales rankings de los canales de música locales.
+    </p>
+
+    <!-- CUADRADO DE MUSICA -->
+
+    <div class="cuadradomusica">
+
+        <img src="Imagenes/Obsesionario.jpg" alt="Portada del disco" class="img">
+
+         <h3 class=" text-center text-xl font-semibold">Canciones más escuchadas del disco:</h3>
+
+        <ul>
+            <li class="canciones">Ella <span><a href="https://open.spotify.com/intl-es/track/5aVhIDZmDeMt2C2ZMX5KoH?si=487b280db37b46e9" target="_blank" class="boton1">Escuchar</a></span></li> 
+                 <hr>
+            <li class="canciones">Loca<a href="https://open.spotify.com/intl-es/track/2n0NCtkvHx1oPqgiAvexiB?si=fdf6c35c326949ab" target="_blank" class="boton2">Escuchar</a></li>
+                  <hr>
+             <li class="canciones">Obsesionario en La Mayor<a href="https://open.spotify.com/intl-es/track/2YNMRnIJMCxDQWYfXRxJmB?si=2dc4408eae534693" target="_blank" class="boton3">Escuchar</a></li>
+                <hr>
+            <li class="canciones">Beautiful<a href="https://open.spotify.com/intl-es/track/0oH7QF9L9fzDy6EFWlivCC?si=3628bf3bda794398" target="_blank" class="boton4">Escuchar</a></li>
+        </ul>
+
+    </div>  
+ 
+    <!-- FORMULARIO -->
+ 
+    <div class="formulario">
+          <form>
+                  <h2 class="text-center text-4xl font-semibold">Agrega una canción</h2>
+
+        <br>
+        <br>
+
+                  <input type="text" name="titulo" placeholder="Titulo" required>
+
+         <br>
+          <br>
+
+                  <input type="text" name="duracion" placeholder="Duración" required>
+
+        <br>
+        <br>
+
+                  <input type="url" name="imagenurl" placeholder="Link a la canción en YouTube." required>
+    
+         <br>
+         <br>
+
+         <!-- BOTONES -->
+
+             <div class="contenedordiv">
+
+                <!-- BOTON DE ENVIAR -->
+
+                  <input type="submit" class="btn" value="Enviar">
+
+                  <!-- BOTON DE CANCELAR -->
+
+                 <input type="submit" class="boton" value="Cancelar">
+
+            </div>
+
+         </form>
+    </div>
+ 
+</body>
+</html>

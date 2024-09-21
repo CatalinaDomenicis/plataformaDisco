@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Album</title>
+
+    <!-- FAVICON -->
+
+    <link rel="shortcut icon" href="Imagenes/Favicon.PNG" type="image/x-icon" >
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="Editalbum.css">
+
+
+</head>
+<body>
+    <header>
+
+        <div class="contenedor">
+
+            <div class="menu menu2">
+
+                 <a href="#tanbionica" class="logo">Tan Biónica</a> 
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="Imagenes/menu.png" class="menuicono" alt="">
+                </label>
+
+                <nav class="navbar">
+ 
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AddAlbum.html">Add Album</a></li>
+                        <li><a href="Editalbum.html"> Edit Album</a></li>
+                        <li><a href="addsong.html"> Add Songs</a></li>
+                        <li><a href="tour.html"> Tour</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- FONDO -->
+
+    <div class="fondo">
+
+        <!-- FORMULARIO -->
+
+        <div class="cuadrado">
+        <form>
+            <h2>Edit Album</h2>
+    
+            <br>
+            <br>
+    
+            <input type="text" name="titulo" placeholder="Título" required>
+    
+           <br>
+           <br>
+    
+           <label for="consultas" class="descripcion">Descripción</label>
+           <br>
+           <br>
+    
+           <textarea id="consultas" rows="15" cols="70" class="cuadradotexto" required></textarea>
+    
+            <br>
+            <br>
+    
+            <label for="url" class="descripcion"></label>
+            <br>
+            <input type="url" name="imagenurl" placeholder="Imagen (URL)" required>
+            
+            <br>
+            <br>
+
+            <!-- BOTONES -->
+
+        <div class="contenedordiv">
+            
+            <!-- BOTON DE ENVIAR -->
+
+            <input type="submit" class="btn" value="Editar">
+
+            <!-- BOTON DE CANCELAR -->
+
+	     <input type="button" class="boton" name="Cancelar" value="Cancelar">
+
+        </div>
+    
+        </form>
+        </div>
+    </div>
+</body>
+</html>

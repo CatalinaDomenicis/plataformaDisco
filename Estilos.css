@@ -1,0 +1,185 @@
+/* LETRAS NAVBAR */
+
+body{
+    font-family:sans-serif; 
+    background-color: #f7f7f7;
+    color: #000000;;
+}
+
+/* MENU */
+
+.contenedor{
+    background-color: #2a6f97;
+    min-height: 80px;
+
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+}
+
+.menu2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: #3997f1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #3997f1;
+}
+
+#menu{
+    display: none;
+}
+
+.menuicono{
+    width: 25px;
+    z-index: 90;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* TITULO */
+
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fondo{
+    height: 55vw; 
+    position: relative;
+    bottom: 75px;
+    background-image: url(Imagenes/tan\ bionica.JPG);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 80vh;
+    max-width: 100%;
+}
+
+/* PARRAFOS */
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.parrafo{
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* IMAGENES */
+
+.contenedorimagenes{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;   
+}
+
+img{
+    padding: 30px;
+    width: 300px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+    
+    .menu{
+        top: 0;
+        padding: 20px 20px 0;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(42, 111, 151, 0.8);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+
+    }
+
+    .menuicono{
+        width: 45px;
+    }
+
+    .fondo{
+        min-height: 0vh;
+        padding: 100px 30px ;
+    }
+
+    .merriweather-bold{
+        text-align: center;
+        padding: 0;
+    }
+
+    .parrafo{
+        text-align: center;
+        padding: 0;
+        max-width: 400px;
+    }
+
+    .contenedorimagenes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    img{
+        padding: 10px;
+         width: 110px;
+    }
+
+}
