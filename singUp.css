@@ -16,10 +16,6 @@ body{
     height: 55vw;
     position: relative;
     bottom: 75px;
-    background: linear-gradient(
-        rgba(29, 30, 35,0.8)
-        rgba(29, 30, 35,0.8)
-    );
     background-image: url(Imagenes/Fondo.JPG);
     background-position: top center;
     background-repeat: no-repeat;
