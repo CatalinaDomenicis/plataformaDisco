@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(255, 255, 255);
+}
+
 /* MENU */
 
 .contenedor{
@@ -65,70 +69,6 @@
     display: none;
 }
 
-
-/* CUADRADO DE CANCIONES */
-
- .cuadradomusica{
-    background-color: rgba(42, 111, 151, 0.5);
-    display: flex;
-    flex-direction: column;
-   padding: 5px;
-    margin: 10px;
-    border: 5px;
-    width: 440px;
-    position: relative;
-    left: 100px;
-    bottom: 450px;
-     
-} 
-
-/* IMAGEN CANCION */
- 
-.img{
-    padding: 30px;
-    width: 450px;
-    align-items: center;
-} 
-
-.canciones{
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    margin-bottom: 10px;
-    font-size: 20px;
-    margin-left: 15px;
-    margin-top: 15px;
-}   
-
-/* BOTON ESCUCHAR */
-
- 
-.boton1{
-    background-color: transparent;
-    margin-left: 258px;
-    outline: none;
-    font-size: 16px;
-}
-
-.boton2{
-    background-color: transparent;
-    margin-left: 253px;
-    outline: none;
-    font-size: 16px;
-}
-
-.boton3{
-    background-color: transparent;
-    margin-left: 243px;
-    outline: none;
-    font-size: 16px;
-}
-.boton4{
-    background-color: transparent;
-    margin-left: 220px;
-    outline: none;
-    font-size: 16px;
-}   
-
 /* PARRAFOS */
 
 .poppins-extralight {
@@ -177,16 +117,17 @@
 
 
 .formulario{
-    background-color: transparent;
+    background-color: #1d4d69;
     display: flex;
     flex-direction: column;
     padding: 50px;
     width: 800px;
     text-align: center;
     position: relative;
-    bottom: 400px;
-    left: 300px;
-}
+    left: 340px;
+    top: 50px;
+    border-radius: 20px; 
+} 
 
 form{
     display: flex;
@@ -194,6 +135,7 @@ form{
     padding: 30px;
     width: 700px;
     outline: none;
+    color: #ffffff;
 }
 
 
@@ -212,7 +154,7 @@ form{
 
 
 ::placeholder{
-    color: #3c3b44;
+    color: #8682a0;
     position: relative;
     left: 20px;
 }

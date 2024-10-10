@@ -1,16 +1,14 @@
-*{
+ *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
+} 
 
 body{
     font-family:sans-serif;
-    background-color: #f7f7f7;
-    color: #000000;;
-}
+} 
 
 /* MENU */
 
@@ -27,7 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 20;
+    z-index: 10;
 }
 
 .menu2{
@@ -76,46 +74,46 @@ body{
 /* IMAGEN DE FONDO */
 
 .fondo{
-     background-image: url(Imagenes/form.WEBP);
-     background-position: top center;
-     background-repeat: no-repeat;
-     background-size: cover;
+     background-color: #ffffff;
      min-height: 80vh;
-     padding: 80px 0 0 0;
+     padding: 80px 0 0 0; 
      max-width: 100%;
+ 
  }  
 
 /* FORMULARIO */
 
 .cuadrado{
-    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1d4d69;
     display: flex;
     flex-direction: column;
     padding: 50px;
     width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
     bottom: 25px;
     left: 300px;
+    border-radius: 20px;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 17px;
     width: 700px;
     outline: none;
 }
 
 form h2{
     font-size: 30px;
-    color: #ffffff;
+    color: #edf0f0;
     margin-bottom: 35px;
-} 
+}
 
 input{
     padding: 17px;
-    width: 650px;
     border-radius: 25px;
     background-color: transparent;
     border: 2px solid #2a6f97 ;
@@ -127,22 +125,18 @@ input{
 
 
 ::placeholder{
-    color: #cccbd8;
+    color: #9d9bb1;
 }
 
-/* DESCRIPCIÓN */
+/* DESCRIPCÓN */
 
 .descripcion{
     color: #ffffff;
     font-size: 20px;
+
 }
 
-/* BOTONES DE ENVIAR Y CANCELAR */
-
-.contenedordiv{
-    display: flex;
-    flex-direction: row;
-}
+/* BOTON ENVIAR */
 
 .btn{
     background-color: #2a6f97;
@@ -151,19 +145,13 @@ input{
     
 }
 
-.boton{
-    background-color: #780000;
-    border: 2px #780000;
-    cursor: pointer;
-}
-
-
 /* RESPONSIVE */
+
 
 @media screen and (max-width: 768px) {
 
     /* MENU */
-    
+
     .contenedor{
         min-height: 78px;
     }
@@ -198,30 +186,24 @@ input{
         height: 100vh;
         padding: 100px 30px ;
         background-image: url(Imagenes/\ responsive.JPG);
-        background-size: cover;
+        max-width: 100%;
     }
 
     form{
-       min-height: 0vh;
        padding: 100px 30px ;
        max-width: 230px;
+       height: 900px;
        position: relative;
        bottom: 70px;
        right: 10px;
     }
 
-    input{
-        width: 230px;
-        position: relative;
-        right: 30px;
-    }
-
     .cuadrado{
         max-width: 300px;
-        height: 900px;
+        height: 790px;
         position: relative;
         bottom: 70px;
-        left: 5px;
+        left: 10px;
 
     }
 
@@ -230,5 +212,6 @@ input{
         position: relative;
         left: 18px;
     }
+
 
 }

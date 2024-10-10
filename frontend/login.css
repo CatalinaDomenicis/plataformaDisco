@@ -16,24 +16,21 @@ body{
     height: 55vw;
     position: relative;
     bottom: 75px;
-    background-image: url(Imagenes/Fondo.JPG);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
     align-items: center;
     min-height: 80vh;
     padding: 80px 0 0 0;
+    background-color: #1d4d69;
 }
 
 /* FORMULARIO */
 
 form{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(222, 232, 238, 0.8);
     display: flex;
     flex-direction: column;
     padding: 10px;
     width: 700px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
     top: 50px;
@@ -42,10 +39,11 @@ form{
     padding: 17px;
     width: 600px;
     outline: none;
+    border-radius: 20px;
 }
 
 .cuadrado{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(222, 232, 238, 0.8);
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -53,11 +51,12 @@ form{
     text-align: center;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
 }
 
 form h2{
     font-size: 30px;
-    color: #edf0f0;
+    color: #000000;
     margin-bottom: 35px;
 }
 
@@ -65,16 +64,16 @@ input{
     padding: 17px;
     border-radius: 25px;
     background-color: transparent;
-    border: 2px solid #2a6f97 ;
+    border: 2px solid #1d4d69 ;
     margin-bottom: 30px;
     outline: none;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
 }
 
 
 ::placeholder{
-    color: #89879b;
+    color: #000000;
 }
 
 /* BOTON ENVIAR */
@@ -88,7 +87,7 @@ input{
 /* SING UP */
 
 .pregunta{
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
 }
 
@@ -103,6 +102,13 @@ input{
     outline: none;
 }
 
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #2a6f97;
+    padding-top: 20px;
+}
 
 @media (max-width: 768px) {
 

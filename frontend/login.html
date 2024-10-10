@@ -20,23 +20,24 @@
 
 <div>
 
-    <form method="post" action="#">
+    <form method="post" action="#" id="form">
 
         <h2>Log in</h2>
 
-        <input type="text" name="Email" placeholder="Email">
+        <input type="text" name="Email" placeholder="Email" id="passwordInput" >
 
          <br>
          <br>
         
-        <input id="password" type="password" name="Contraseña" placeholder="Contraseña" for="password">
+        <input id="password" type="password" name="Contraseña" placeholder="Contraseña" for="password" id="passwordInput">
 
          <br>
          <br>
 
          <!-- BOTON ENVIAR -->
 
-         <input type="submit" class="btn" value="Enviar">
+         <input type="submit" class="btn" onclick="login()">
+         <p id="warnings" class="warnings"></p>
 
          <br>
          <br>
@@ -65,7 +66,14 @@
 
 </div>
 
-  
+<!-- LIBRERIA SweetAlert  -->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- JAVASCRIPT -->
+
+<script src="login.js"></script>
+
     
 </body>
 </html>
