@@ -4,7 +4,7 @@ function login(){
     let email = document.getElementById("email")
     let pass = document.getElementById("password")
 
-    if( email.value.length < 0 || pass.value.length < 0 ){
+    if( email.value.length === 0 || pass.value.length === 0 ){
         swal("UPS!", "Completa los campos para continuar!", "error"); 
         
     }else{
