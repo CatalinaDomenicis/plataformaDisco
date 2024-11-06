@@ -2,12 +2,14 @@
 
 const express = require('express')
 const mongoose = require('mongoose')
+const dotenv = require('dotenv').config()
 
 const router = require('./routes/index.js')
 const album = require('./models/index.js')
 const user = require('./models/index.js')
 
-const url = 'mongodb+srv://catalinadedomenicis:MNFIi4zdHVXRc2xk@proyectoplataformadisco.h5vxr.mongodb.net/?retryWrites=true&w=majority&appName=ProyectoPlataformaDisco' 
+const url = process.env.DATABASE_URL
+const PORT = process.env.PORT
 
 const app = express()
 
@@ -26,7 +28,7 @@ const connectToMongo = async () => {
 
    //FUNCION PARA LEVANTAR EL SERVIDOR
 
-   app.listen(5000, () => {
+   app.listen(PORT, () => {
    console.log('Servidor escuchando en puerto 5000')
    })
 
