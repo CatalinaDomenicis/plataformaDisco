@@ -172,4 +172,4 @@ function deleteSong(albumId, songId) {
 }
 
 
-loadAlbums(); // Vuelve a cargar los álbumes con la nueva canció
+loadAlbums(); // Vuelve a cargar los álbumes con la nueva canción

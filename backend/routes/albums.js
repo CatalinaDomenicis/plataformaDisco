@@ -81,9 +81,6 @@ router.put('/band/:id', async (req, res)=>{
         
     res.json(updatedAlbum);
 
-    console.log(req.body);  // Los datos del formulario
-    console.log(req.params.id);  // El ID del álbum
-
    /*  res.status(200).send("Elemento actualizado correctamente") */
   } catch (error) {
     console.log(error)
