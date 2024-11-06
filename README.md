@@ -4,7 +4,7 @@
 
 ## 📝 Descripción del Proyecto
 
-El proyecto consiste en crear una pagina web de una banda y que dentro de la pagina podamos agregar los albumes ylas canciones de la banda. Que las podamos editar o elimiar cuando queramos.
+El proyecto consiste en crear una pagina web de una banda y que dentro de la pagina podamos agregar los albumes y las canciones de la banda. Y que estos podamos editarlos o elimiarlos cuando queramos.
 
 ## 🔨 Funcionalidades 
 
