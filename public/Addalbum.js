@@ -7,7 +7,7 @@ window.onload = loadAlbums;
 
 async function loadAlbums() {
     try {
-        const response = await axios.get('http://plataformadisco-coxn.onrender.com//band/band');
+        const response = await axios.get('http://plataformadisco-coxn.onrender.com/band/band');
         albums = response.data;
         displayAlbums();
     } catch (error) {
@@ -61,7 +61,7 @@ document.getElementById('album-form').addEventListener('submit', async (event) =
     const albumData = { titulo, año, descripcion, portada };
 
     try {
-        const response = await axios.post('http://plataformadisco-coxn.onrender.com//band/band', albumData);
+        const response = await axios.post('http://plataformadisco-coxn.onrender.com/band/band', albumData);
         alert('Álbum creado exitosamente');
 
         document.getElementById('album-form').reset(); 
@@ -98,7 +98,7 @@ document.getElementById('guardarcambios').addEventListener('click', async () => 
     const albumData = { titulo, año, descripcion, portada };
 
     try {
-        const response = await axios.put(`http://plataformadisco-coxn.onrender.com//band/band/${editingAlbumId}`, albumData);
+        const response = await axios.put(`http://plataformadisco-coxn.onrender.com/band/band/${editingAlbumId}`, albumData);
         alert('Álbum actualizado exitosamente');
         loadAlbums();  // Volver a cargar los álbumes
         cancelEdit();  // Ocultar formulario de edición
@@ -124,7 +124,7 @@ function cancelEdit() {
 async function deleteAlbum(id) {
     if (confirm('¿Estás seguro de que quieres eliminar este álbum?')) {
         try {
-            await axios.delete(`http://plataformadisco-coxn.onrender.com//band/band/${id}`);
+            await axios.delete(`http://plataformadisco-coxn.onrender.com/band/band/${id}`);
             alert('Álbum eliminado');
             loadAlbums();  // Volver a cargar los álbumes
         } catch (error) {
@@ -153,7 +153,7 @@ document.getElementById('addSongButton').addEventListener('click', async() => {
     const songName = document.getElementById('songName').value;
     const songDuration = document.getElementById('songDuration').value;
 
-    axios.post(`http://plataformadisco-coxn.onrender.com//band/${currentAlbumId}/songs`, { titulo: songName, duracion: songDuration })
+    axios.post(`http://plataformadisco-coxn.onrender.com/band/${currentAlbumId}/songs`, { titulo: songName, duracion: songDuration })
       .then(() => {
         loadAlbums(); // Volver a cargar los álbumes con la nueva canción
         cancelAddSong(); // Ocultar el formulario de agregar canción
@@ -164,7 +164,7 @@ document.getElementById('addSongButton').addEventListener('click', async() => {
 // Eliminar una canción de un álbum
 
 function deleteSong(albumId, songId) {
-    axios.delete(`http://plataformadisco-coxn.onrender.com///band/${albumId}/songs/${songId}`)
+    axios.delete(`http://plataformadisco-coxn.onrender.com/band/${albumId}/songs/${songId}`)
       .then(() => {
         loadAlbums(); // Volver a cargar los álbumes después de eliminar la canción
       })
