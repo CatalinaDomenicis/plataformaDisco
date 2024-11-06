@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+} 
+
+body{
+    font-family:sans-serif;
+} 
+
+/* MENU */
+
+.contenedor{
+    background-color: #2a6f97;
+    min-height: 80px;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.menu2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: #3997f1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #3997f1;
+}
+
+#menu{
+    display: none;
+}
+
+.menuicono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* TITULO */
+
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.listaalbums{
+    position: relative;
+    top: 20px;
+}
+
+/* LETRAS */
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+/* FONDO */
+
+.fondo{
+     background-color: #ffffff;
+     min-height: 80vh;
+     padding: 80px 0 0 0; 
+     max-width: 100%;
+ 
+ } 
+
+/* FORMULARIO */
+
+.cuadrado{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1d4d69;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    top: 40px;
+    left: 300px;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+    width: 700px;
+    outline: none;
+}
+
+form h3{
+    font-size: 30px;
+    color: #edf0f0;
+    margin-bottom: 35px;
+}
+
+.titulo{
+    width: 670px;
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #2a6f97 ;
+    margin-bottom: 30px;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.año{
+    width: 670px;
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #2a6f97 ;
+    margin-bottom: 30px;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.portada{
+    width: 670px;
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #2a6f97 ;
+    margin-bottom: 30px;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.descripcion{
+    width: 670px;
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #2a6f97 ;
+    margin-bottom: 30px;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: #9d9bb1;
+}
+
+/* BOTONES */
+
+.btn{
+    font-size: larger;
+    padding: 20px;
+    background-color: #2a6f97;
+    border: 2px #2a6f97;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.btnalbum{
+    font-size: medium;
+    padding: 10px;
+    background-color: #2a6f97;
+    border: 2px #2a6f97;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.btn2{
+    font-size: medium;
+    padding: 10px;
+    background-color: #780000;
+    border: 2px #780000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.boton{
+    position: relative;
+    bottom: 40px;
+}
+
+.btn3{
+    color: #780000;
+    
+}
+
+/* ALBUNES */
+
+.img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 200px;
+    left: 20px;
+}
+
+.cuadro{
+    width: 550px;
+    height: 100px;
+    background-color: transparent;
+    position: relative;
+    top: 60px;
+    left: 135px;
+}
+
+.tituloalbum{
+    position: relative;
+    top: 20px;
+}
+
+.añoalbum{
+    position: relative;
+    top: 50px;
+} 
+
+
+
+
+

@@ -1,13 +1,15 @@
+// EXPRESS
 const express = require('express')
-
-// INSTANCIA PARA MANEJAR RUTAS
-
+// MODELS
+const albums = require('../models/albums.js')
+//UNA INSTANCIA PARA MANEJAR RUTAS
 const router = express.Router()
 
-// RUTAS
+const album = require('./albums.js')
+const user = require('./user.js')
 
-router.get("/", (req, res) => {
-    res.status(200).send("Bienvenidos")
-})  
+//router.use 
+router.use('/band', album)
+router.use('/user', user)
 
-module.exports = router
+ module.exports = router

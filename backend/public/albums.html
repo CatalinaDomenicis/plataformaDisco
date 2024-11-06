@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums</title>
+
+     <!-- FAVICON -->
+
+     <link rel="shortcut icon" href="Imagenes/Favicon.PNG" type="image/x-icon" >
+
+     <!-- LETRAS CON GOOGLE -->
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+     <!-- TAILWIND -->
+ 
+     <script src="https://cdn.tailwindcss.com"></script>
+ 
+     <!-- CSS -->
+ 
+     <link rel="stylesheet" href="albums.css">
+ 
+     <!-- ICONO TACHITO -->
+ 
+     <script src="https://kit.fontawesome.com/9aad782c76.js" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+
+    <!-- MENU -->
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="menu menu2">
+
+                 <a href="#tanbionica" class="logo">Tan Biónica</a> 
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="Imagenes/menu.png" class="menuicono" alt="">
+                </label>
+
+                <nav class="navbar">
+ 
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="albums.html">Albums</a></li>
+                        <li><a href="tour.html"> Tour</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- FORMULARIO -->
+    
+
+  <form id="album-form" class="cuadrado">
+
+        <h1 class="merriweather-bold text-2xl">Formulario de Álbum</h1>
+
+        <br>
+        <br>
+
+        <input type="text" id="titulo" placeholder="Título de álbum" class="titulo" required>
+
+        <br>
+        <br>
+
+        <input type="number" id="año" placeholder="Año de lanzamiento del álbum" class="año" required>
+        
+        <br><br>
+
+       
+        <input type="text" id="descripcion" placeholder="Descripción" class="descripcion" required>
+        
+        <br>
+        <br>
+
+    
+        <input type="text" id="portada" placeholder="Portada" class="portada" required>
+        
+        <br>
+        <br>
+
+        <button type="submit" class="btn">Agregar Álbum</button>
+
+    </form>
+
+    <!-- ALBUMS GUARDADOS -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h2 class="merriweather-bold text-4xl text-center listaalbums" >Álbumes Guardados:</h2>
+
+    <br>
+    <br> 
+
+    <div class="cuadrado">
+    <ul id="album-list">
+    </ul>
+    
+    <!-- FORMULARIO DE EDICION DE ALBUMS (inicialmente oculto) -->
+
+    <br>
+    <br>
+
+    <div id="edit-form" style="display: none;">
+
+        <h3 class="merriweather-bold text-2xl">Editar Álbum</h3>
+
+        <br>
+        <br>
+
+       <!--   TITULO  -->
+
+        <label for="edit-titulo" class="merriweather-bold text-xl">Título:</label> 
+        <input type="text" id="edit-titulo" placeholder="Título de álbum" class="titulo" required>
+
+        <br>
+        <br>
+
+        <label for="edit-año" class="merriweather-bold text-xl">Año de Lanzamiento:</label> 
+        <input type="text" id="edit-año" placeholder="Año de Lanzamiento" class="año" required>
+
+        <br>
+        <br>
+
+        <!-- DESCRIPCIÓN -->
+
+        <label for="edit-descripcion" class="merriweather-bold text-xl">Descripción:</label>
+        <input type="text" id="edit-descripcion" placeholder="Descripción" class="descripcion" required>
+
+        <br>
+        <br>
+
+       <!--   PORTADA  -->
+
+        <label for="edit-portada" class="merriweather-bold text-xl">Portada (URL):</label> 
+        <input type="text" id="edit-portada" class="portada" required><br><br>
+
+     <!--    BOTONES  -->
+
+        <button id="guardarcambios" class="btnalbum">Guardar cambios</button>
+
+        <button id="cancel-edit" class="btn2">Cancelar</button>
+    </div> 
+
+
+    <!-- FORMULARIO PARA AGREGAR CANCIONES -->
+
+    <div id="addSongForm" style="display: none;">
+         <br>
+         <br>
+
+       <h3 class="merriweather-bold text-2xl">Agregar Canción</h3>
+
+         <br>
+         <br>
+
+       <input type="text" id="songName" placeholder="Nombre de la canción"  class="titulo" required>
+
+       <input type="text" id="songDuration" placeholder="Duración" class="descripcion" required>
+
+       <!-- BOTONES -->
+
+       <button id="addSongButton" class="btnalbum">Agregar Canción</button>
+
+       <button type="button" class="btn2"  onclick="cancelAddSong()">Cancelar</button>
+  </div>
+
+    </div>
+
+    <!-- AXIOS -->
+
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+
+     <script src="Addalbum.js"></script>
+
+     <script src="albums.js"></script>
+
+</body>
+</html>
+
+
